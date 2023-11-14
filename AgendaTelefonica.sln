@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgendaTelefonicaFrontEnd", "AgendaTelefonica\AgendaTelefonicaFrontEnd.csproj", "{EC637A1B-0340-48C8-B9F5-767E3DB36AA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AgendaTelefonicaBackEnd", "AgendaTelefonicaBackEnd\AgendaTelefonicaBackEnd.csproj", "{B3B35701-D02C-4F92-899D-FDCCC7A20F8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgendaTelefonicaBackEnd", "AgendaTelefonicaBackEnd\AgendaTelefonicaBackEnd.csproj", "{B3B35701-D02C-4F92-899D-FDCCC7A20F8D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgendaTelefonicalModel", "AgendaTelefonicalModel\AgendaTelefonicalModel.csproj", "{AB9623E6-BDAC-4C7B-8DAA-FA0DDEDC3C63}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgendaTelefonicaModel", "AgendaTelefonicaModel\AgendaTelefonicaModel.csproj", "{15AC1DAC-F49A-41D6-9DBA-20952EC26EA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EC637A1B-0340-48C8-B9F5-767E3DB36AA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC637A1B-0340-48C8-B9F5-767E3DB36AA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EC637A1B-0340-48C8-B9F5-767E3DB36AA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EC637A1B-0340-48C8-B9F5-767E3DB36AA9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B3B35701-D02C-4F92-899D-FDCCC7A20F8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B3B35701-D02C-4F92-899D-FDCCC7A20F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3B35701-D02C-4F92-899D-FDCCC7A20F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3B35701-D02C-4F92-899D-FDCCC7A20F8D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AB9623E6-BDAC-4C7B-8DAA-FA0DDEDC3C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AB9623E6-BDAC-4C7B-8DAA-FA0DDEDC3C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AB9623E6-BDAC-4C7B-8DAA-FA0DDEDC3C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AB9623E6-BDAC-4C7B-8DAA-FA0DDEDC3C63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15AC1DAC-F49A-41D6-9DBA-20952EC26EA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15AC1DAC-F49A-41D6-9DBA-20952EC26EA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15AC1DAC-F49A-41D6-9DBA-20952EC26EA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15AC1DAC-F49A-41D6-9DBA-20952EC26EA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

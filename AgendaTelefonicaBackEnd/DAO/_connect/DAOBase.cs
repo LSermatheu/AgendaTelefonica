@@ -7,10 +7,10 @@ namespace AgendaTelefonicaBackEnd.DAO._connect
         private readonly NHibernate.ISession _session;
         private ITransaction? _transaction = null;
 
-        public DAOBase()
-        {
-            _session = DAOConnect.OpenSession();
-        }
+        //public DAOBase()
+        //{
+        //    _session = DAOConnect.OpenSession();
+        //}
 
         public void Dispose()
         {
