@@ -1,22 +1,26 @@
-﻿using AgendaTelefonicaBackEnd.DAO.contatos;
-using Microsoft.AspNetCore.Http;
+﻿using AgendaTelefonica.BackEnd.DAO.contatos;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AgendaTelefonicaBackEnd.Controllers
+namespace AgendaTelefonica.Backend.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class ContatosController : ControllerBase
     {
+        private ContatosDAO dao;
+        public ContatosController()
+        {
+            dao = new ContatosDAO();
+        }
+                
         [HttpGet("list/{filtro?}")]
-        public ActionResult LIST(string? filtro)
+        public ActionResult LIST(string? filtro = null)
         {
             ActionResult result;
 
             try
             {
-                using (var dao = new ContatosDAO())
-                    result = Ok(dao.List(filtro ?? ""));
+                result = Ok(dao.List(filtro ?? ""));
             }
             catch (Exception ex)
             {
@@ -26,33 +30,36 @@ namespace AgendaTelefonicaBackEnd.Controllers
             return result;
         }
 
-        [HttpGet("{int:id}")]
+        [HttpGet("{id:int}")]
         public ActionResult GET(int id)
         {
             ActionResult result;
 
             try
             {
-                using (var dao = new ContatosDAO())
-                    result = Ok(dao.Get(id));
+                var obj = dao.Get(id);
+                if (obj != null)
+                    result = Ok(obj);
+                else
+                    result = NotFound();
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                result = BadRequest(e.Message);
+                result = BadRequest(ex.Message);
             }
 
             return result;
+
         }
 
         [HttpPost]
-        public ActionResult SAVE([FromBody] Contato obj)
+        public ActionResult SAVE([FromBody] Contato contatoObj)
         {
             ActionResult result;
 
             try
             {
-                using (var dao = new ContatosDAO())
-                    result = Ok(dao.Save(obj));
+                result = Ok(dao.Save(contatoObj));
             }
             catch (Exception ex)
             {
@@ -69,8 +76,7 @@ namespace AgendaTelefonicaBackEnd.Controllers
 
             try
             {
-                using (var dao = new ContatosDAO())
-                    result = Ok(dao.Delete(id));
+                result = Ok(dao.Delete(id));
             }
             catch (Exception ex)
             {
@@ -79,5 +85,6 @@ namespace AgendaTelefonicaBackEnd.Controllers
 
             return result;
         }
+
     }
 }

@@ -1,9 +1,9 @@
-﻿using AgendaTelefonicaBackEnd.DAO.contatos;
+﻿using AgendaTelefonica.BackEnd.DAO.contatos;
 using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
 using NHibernate;
 
-namespace AgendaTelefonicaBackEnd.DAO._connect
+namespace AgendaTelefonica.BackEnd.DAO._connect
 {
     public static class DAOConnect
     {
@@ -23,7 +23,7 @@ namespace AgendaTelefonicaBackEnd.DAO._connect
                 factory = Fluently.Configure()
                     .Database(MySQLConfiguration.Standard.ConnectionString(connectionString))
                     .Mappings(m => m.FluentMappings
-                            .Add<Contato>()
+                            .AddFromAssemblyOf<Program>()
                         ).BuildSessionFactory();
 
             }

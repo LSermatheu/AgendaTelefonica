@@ -1,4 +1,6 @@
-﻿namespace AgendaTelefonicaBackEnd.DAO.contatos
+﻿using NHibernate.Linq;
+
+namespace AgendaTelefonica.BackEnd.DAO.contatos
 {
     public class ContatosDAO : _connect.DAOBase<ContatosDTO>
     {
@@ -17,7 +19,11 @@
         {
             var retorno = new List<Contato>();
 
-            var lista = ListByExpression(e => e.contatoNome.Contains(filter) && e.contatoAtivo, o => o.contatoNome);
+            var lista = ListByExpression(e => e.contatoNome.Contains(filter) && e.contatoAtivo, o => o.contatoId);
+            foreach (var item in lista)
+            {
+                retorno.Add(new Contato(item));
+            }
 
             return retorno;
         }

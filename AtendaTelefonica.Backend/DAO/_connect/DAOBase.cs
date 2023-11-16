@@ -1,8 +1,7 @@
 ﻿using NHibernate;
 using System.Linq.Expressions;
-using System.Linq;
 
-namespace AgendaTelefonicaBackEnd.DAO._connect
+namespace AgendaTelefonica.BackEnd.DAO._connect
 {
     public class DAOBase<T> : IDisposable
     {

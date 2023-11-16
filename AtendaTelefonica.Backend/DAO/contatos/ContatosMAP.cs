@@ -1,14 +1,14 @@
-﻿using FluentNHibernate.Mapping;
-
-namespace AgendaTelefonicaBackEnd.DAO.contatos
+﻿namespace AgendaTelefonica.BackEnd.DAO.contatos
 {
+    using FluentNHibernate.Mapping;
+
     public class ContatosMAP : ClassMap<ContatosDTO>
     {
         public ContatosMAP()
         {
             Table("contatos");
 
-            Id(x => x.contatoId).GeneratedBy.Identity();
+            Id(x => x.contatoId);
 
             Map(x => x.contatoNome);
             Map(x => x.contatoTelefone1);
@@ -20,3 +20,5 @@ namespace AgendaTelefonicaBackEnd.DAO.contatos
         }
     }
 }
+
+
