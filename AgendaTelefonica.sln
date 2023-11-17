@@ -5,7 +5,9 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AgendaTelefonica.Model", "AgendaTelefonicaModel\AgendaTelefonica.Model.csproj", "{15AC1DAC-F49A-41D6-9DBA-20952EC26EA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgendaTelefonica.Backend", "AtendaTelefonica.Backend\AgendaTelefonica.Backend.csproj", "{C4DCF4EC-DB9B-4F42-B156-2D5CC0D53F8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AgendaTelefonica.Backend", "AtendaTelefonica.Backend\AgendaTelefonica.Backend.csproj", "{C4DCF4EC-DB9B-4F42-B156-2D5CC0D53F8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgendaTelefonica.Frontend", "AgendaTelefonica.Frontend\AgendaTelefonica.Frontend.csproj", "{9A44A258-35C9-405B-A4CC-4FB8CC043602}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C4DCF4EC-DB9B-4F42-B156-2D5CC0D53F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4DCF4EC-DB9B-4F42-B156-2D5CC0D53F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4DCF4EC-DB9B-4F42-B156-2D5CC0D53F8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A44A258-35C9-405B-A4CC-4FB8CC043602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A44A258-35C9-405B-A4CC-4FB8CC043602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A44A258-35C9-405B-A4CC-4FB8CC043602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A44A258-35C9-405B-A4CC-4FB8CC043602}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

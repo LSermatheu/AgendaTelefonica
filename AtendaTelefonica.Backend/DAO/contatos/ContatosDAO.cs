@@ -56,6 +56,20 @@ namespace AgendaTelefonica.BackEnd.DAO.contatos
             return result;
         }
 
+        public bool Restore(int id)
+        {
+            bool result = false;
+            var dto = GetByKey(id);
+
+            if (dto!= null)
+            {
+                dto.contatoAtivo = true;
+                result = SaveObject(dto);
+            }
+
+            return result;
+        }
+
     }
 
 }

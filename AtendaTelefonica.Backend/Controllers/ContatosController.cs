@@ -12,9 +12,9 @@ namespace AgendaTelefonica.Backend.Controllers
         {
             dao = new ContatosDAO();
         }
-                
-        [HttpGet("list/{filtro?}")]
-        public ActionResult LIST(string? filtro = null)
+
+        [HttpGet("list")]
+        public ActionResult LIST([FromQuery] string? filtro = null)
         {
             ActionResult result;
 
@@ -86,5 +86,20 @@ namespace AgendaTelefonica.Backend.Controllers
             return result;
         }
 
+        [HttpGet("restore/{id:int}")]
+        public ActionResult RESTORE(int id)
+        {
+            ActionResult result;
+            try
+            {
+                result = Ok(dao.Restore(id));
+            }
+            catch (Exception ex)
+            {
+                result = BadRequest(ex.Message);
+            }
+
+            return result;
+        }
     }
 }
