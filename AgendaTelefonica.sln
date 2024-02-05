@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgendaTelefonica.API", "AgendaTelefonica.API\AgendaTelefonica.API.csproj", "{DAE9C5BA-FF1D-46DF-B776-9E195B4306BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgendaTelefonica.Shared", "AgendaTelefonica.Shared\AgendaTelefonica.Shared.csproj", "{6674C9A2-ECDF-41C1-92BC-B357B4F27410}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAE9C5BA-FF1D-46DF-B776-9E195B4306BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAE9C5BA-FF1D-46DF-B776-9E195B4306BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAE9C5BA-FF1D-46DF-B776-9E195B4306BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAE9C5BA-FF1D-46DF-B776-9E195B4306BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6674C9A2-ECDF-41C1-92BC-B357B4F27410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6674C9A2-ECDF-41C1-92BC-B357B4F27410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6674C9A2-ECDF-41C1-92BC-B357B4F27410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6674C9A2-ECDF-41C1-92BC-B357B4F27410}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {810F8382-4D4B-4A6D-97F8-3107F6DA563C}
+	EndGlobalSection
+EndGlobal
